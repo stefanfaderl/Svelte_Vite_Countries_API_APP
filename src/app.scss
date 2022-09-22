@@ -1,0 +1,73 @@
+/* Global styles */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-primary-color: hsl(0, 0%, 98%);
+  --theme-secondary-color: hsl(200, 15%, 8%); // light mode text
+  --theme-mode-elements: hsl(0, 0%, 100%);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: var(--theme-primary-color);
+  color: var(--theme-secondary-color);
+}
+
+.center {
+  margin: 0 auto;
+}
+
+#max-width-content,
+nav {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 10px;
+}
+
+nav {
+  padding: 30px 10px;
+}
+
+header {
+  background-color: var(--theme-mode-elements);
+}
+
+button {
+  cursor: pointer;
+}
+
+.dark_mode {
+  --theme-primary-color: hsl(207, 26%, 17%);
+  --theme-secondary-color: white;
+  --theme-mode-elements: hsl(209, 23%, 22%);
+}
+
+.bolder-text {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 960px) {
+  #max-width-content,
+  nav {
+    max-width: 1440px;
+    padding: 0 70px;
+  }
+  nav {
+    padding: 15px 70px;
+  }
+}
